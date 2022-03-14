@@ -1,2 +1,2 @@
-# Rossmann Stores - 6 week Sales Prediction ![alt text](https://github.com/velozo-oliveira/rossmann_sales_prediction/blob/main/Images/rossmann.jpg =100x20)
+# Rossmann Stores - 6 week Sales Prediction ![alt text](img src=https://github.com/velozo-oliveira/rossmann_sales_prediction/blob/main/Images/rossmann.jpg width="200" height="200")
 

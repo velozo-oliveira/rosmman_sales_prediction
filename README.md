@@ -135,25 +135,23 @@
 <p dir="auto">Please find the summary of the analysis of hypotheses 1, 2, 5. Refer to the notebook file for the complete Exploratory Data Analysis.<br></p>
 
 <h1 dir="auto">Top Three Data Insights </h1>
-<p><strong>H1.</strong> **Stores with a bigger product assortment are more likely to sell more daily**</p>
-<p>**True**: Stores with a bigger product assortment are more likely to sell more</p>
-<img src='Images/H1.png'.png/>
-<p><br></p>
+<p><strong>H1. Stores with a bigger product assortment are more likely to sell more daily</strong></p>
+<p><strong>True:<strong/> Stores with a bigger product assortment are more likely to sell more</p>
 <p>Stores with extra assortment have a better performance when comparing the average sales over time between all story types.</p>
-<img src='Images/H1_1.png'.png/>
+<img src='Images/H1_1.png'/>
 
 <p><br></p>
 
-<p><strong>H2.</strong> **Stores with closer competitors are more likely to sell less**</p>
-<p>**False**: The distance from competitors does not influence store sales.</p>
+<p><strong>H2.Stores with closer competitors are more likely to sell less</strong></p>
+<p><strong>False</strong>: The distance from competitors does not influence store sales.</p>
 <p>Notice that sales do not increase as the nearest competitor distance grow. Sales seem to be independent of competition distance, which can be considered an insight. Competitor does not impact the business negatively, contradicting the common belief.</p>
 <img src='Images/H2_2.png'.png/>
 
 
 <p><br></p>
 
-<p><strong>H5.</strong> **Stores with more extended promotions are more likely to sell more**</p>
-<p>**False**: Stores that applied promo2 followed by promo1 performed worse on average when compared to stores that applied only the promo1.</p>
+<p><strong>H5. Stores with more extended promotions are more likely to sell more</strong></p>
+<p><strong>False:</strong> Stores that applied promo2 followed by promo1 performed worse on average when compared to stores that applied only the promo1.</p>
 
 <p>Historically, following this approach do not work in terms of generating more sales.</p>
 <img src='Images/H3.png'.png/>
@@ -170,8 +168,260 @@
 
 <h1 dir="auto">Machine Learning Models Performance</h1>
 
-<p>The metrics applied to measure the performance of the algorithms were MAE, MAPE and RMSE.</p>
+<p>The metrics applied to measure the performance of the algorithms were MAE, MAPE and RMSE. </p>
+<ol>
+    <li>MAE<em>&nbsp;(Mean Absolute Error)&nbsp;</em></li>
+    <li><em>MAPE</em> (Mean Absolute Percentage Error)</li>
+    <li>RMSE<em>&nbsp;(Root Mean Squared Error) </em></li>
+</ol>
+<p>The Cross-Validation resampling procedure was applied to each ML model to provide a more reliable performance overview. Please find the results in the table below:</p>
+<div align="left">
+    <table style="margin-right: calc(11%); width: 89%;">
+        <tbody>
+            <tr>
+                <td style="width: 36.4386%;">
+                    <p><strong>Model Name</strong></p>
+                </td>
+                <td style="width: 23.645%;">
+                    <p><strong>MAE</strong></p>
+                </td>
+                <td style="width: 17.9539%;">
+                    <p><strong>MAPE</strong></p>
+                </td>
+                <td style="width: 21.8401%;">
+                    <p><strong>RMSE</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 36.4386%;">
+                    <p>XGBoost Regressor</p>
+                </td>
+                <td style="width: 23.645%;">
+                    <p>1056.17 +/- 179.13</p>
+                </td>
+                <td style="width: 17.9539%;">
+                    <p>0.14 +/- 0.02</p>
+                </td>
+                <td style="width: 21.8401%;">
+                    <p>1528.68 +/- 247.36</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 36.4386%;">
+                    <p>Random Forest Regressor</p>
+                </td>
+                <td style="width: 23.645%;">
+                    <p>1752.72 +/- 247.1</p>
+                </td>
+                <td style="width: 17.9539%;">
+                    <p>0.24 +/- 0.01</p>
+                </td>
+                <td style="width: 21.8401%;">
+                    <p>2477.31 +/- 347.8</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 36.4386%;">
+                    <p>Linear Regression</p>
+                </td>
+                <td style="width: 23.645%;">
+                    <p>2082.69 +/- 294.85</p>
+                </td>
+                <td style="width: 17.9539%;">
+                    <p>0.3 +/- 0.02</p>
+                </td>
+                <td style="width: 21.8401%;">
+                    <p>2953.48 +/- 467.23</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 36.4386%;">
+                    <p>Linear Regression - Lasso</p>
+                </td>
+                <td style="width: 23.645%;">
+                    <p>2116.16 +/- 340.55</p>
+                </td>
+                <td style="width: 17.9539%;">
+                    <p>0.29 +/- 0.01</p>
+                </td>
+                <td style="width: 21.8401%;">
+                    <p>3057.36 +/- 503.47</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>The ML model chosen to continue the analysis and calculate the predictions is the XGBoost Regressor, as this model had the best performance. Another advantage of using XGBoost Regressor is that XGBoost Regressor requires less memory than RandomForest when deployed to production.</p>
 
 <h1 dir="auto">Hyperparemeter Fine Tuning</h1>
+<p>The Random Search procedure was used to optimize the Hyperparemeters of XGBoost Regressor. When applying the optimized parameters found out by Random Search to XGBoost Regressor, the performance on the test dataset was:</p>
+
+<div align="left"><br></div>
+<div align="left">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p><strong>Model Name</strong></p>
+                </td>
+                <td style="width: 26.9886%;">
+                    <p><strong>MAE</strong></p>
+                </td>
+                <td style="width: 22.0729%;">
+                    <p><strong>MAPE</strong></p>
+                </td>
+                <td style="width: 14.2035%;">
+                    <p><strong>RMSE</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>XGBoost Regressor</p>
+                </td>
+                <td style="width: 26.9886%;">
+                    <p>635.791052</p>
+                </td>
+                <td style="width: 22.0729%;">
+                    <p>0.092513</p>
+                </td>
+                <td style="width: 14.2035%;">
+                    <p>930.889367</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <h1 dir="auto">Business Performance</h1>
+<p>These are the methods used to evaluate the Machine Learning prediction model in terms of business results:</p>
+<ul>
+    <li>
+        <p>Analysis of divergence between the sales predicted and real sales.</p>
+    </li>
+        <p>The graph bellow presents the stores' MAPE:</p>
+<img src='Images/MAPE.png'/>
+
+<p>Notice that most predictions are centered around a line parallel to the X axis (MAPE 9% in Y axis). However, there are points quite far apart. Some stores' forecasts are not accurate. Stores where the value prediction diverge significantly from the real sales are not recommended to make business decisions based on the current model.</p>
+    <li>
+
+        <p>How much the model predicted each store to sell in the expected scenario, worst scenario and best scenario.</p>
+    </li>
+
+    <div align="left">
+        <table>
+            <tbody>
+                <tr>
+                    <td style="width: 10.5008%;">
+                        <p><strong>store</strong></p>
+                    </td>
+                    <td style="width: 22.7389%;">
+                        <p><strong>predictions</strong></p>
+                    </td>
+                    <td style="width: 21.351%;">
+                        <p><strong>worst_scenario</strong></p>
+                    </td>
+                    <td style="width: 20.579%;">
+                        <p><strong>best_scenario</strong></p>
+                    </td>
+                    <td style="width: 13.273%;">
+                        <p><strong>MAE</strong></p>
+                    </td>
+                    <td style="width: 11.4556%;">
+                        <p><strong>MAPE</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 10.5008%;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 22.7389%;">
+                        <p>163903.87</p>
+                    </td>
+                    <td style="width: 21.351%;">
+                        <p>163623.30</p>
+                    </td>
+                    <td style="width: 20.579%;">
+                        <p>164184.44</p>
+                    </td>
+                    <td style="width: 13.273%;">
+                        <p>280.57</p>
+                    </td>
+                    <td style="width: 11.4556%;">
+                        <p>0.063</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 10.5008%;">
+                        <p>2</p>
+                    </td>
+                    <td style="width: 22.7389%;">
+                        <p>179493.82</p>
+                    </td>
+                    <td style="width: 21.351%;">
+                        <p>179113.18</p>
+                    </td>
+                    <td style="width: 20.579%;">
+                        <p>179874.47</p>
+                    </td>
+                    <td style="width: 13.273%;">
+                        <p>380.64</p>
+                    </td>
+                    <td style="width: 11.4556%;">
+                        <p>0.076</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 10.5008%;">
+                        <p>3</p>
+                    </td>
+                    <td style="width: 22.7389%;">
+                        <p>261257.82</p>
+                    </td>
+                    <td style="width: 21.351%;">
+                        <p>260702.46</p>
+                    </td>
+                    <td style="width: 20.579%;">
+                        <p>261813.19</p>
+                    </td>
+                    <td style="width: 13.273%;">
+                        <p>555.36</p>
+                    </td>
+                    <td style="width: 11.4556%;">
+                        <p>0.077</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 10.5008%;">
+                        <p>4</p>
+                    </td>
+                    <td style="width: 22.7389%;">
+                        <p>343334.03</p>
+                    </td>
+                    <td style="width: 21.351%;">
+                        <p>342475.49</p>
+                    </td>
+                    <td style="width: 20.579%;">
+                        <p>344192.56</p>
+                    </td>
+                    <td style="width: 13.273%;">
+                        <p>858.53</p>
+                    </td>
+                    <td style="width: 11.4556%;">
+                        <p>0.081</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <li>
+        <p>Analysis of predicted daily sales behavior in the analyzed period, for all stores sales.</p>
+    </li>
+    <img src='Images/Predict_Over_Time.png'/>
+            <p>The shadow indicates that multiple stores were ploted over time.</p>
+</ul>
+
+
+<h1 dir="auto">Deploy</h1>
+<div align="left">At this stage the model will be put into production to make the predictions accessible to the end user. A telegram bot will be designed so anyone access the sales prediction of any store.</div>

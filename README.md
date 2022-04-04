@@ -300,115 +300,112 @@
 
 <p>Notice that most predictions are centered around a line parallel to the X axis (MAPE 9% in Y axis). However, there are points quite far apart. Some stores' forecasts are not accurate. Stores where the value prediction diverge significantly from the real sales are not recommended to make business decisions based on the current model.</p>
     <li>
-
     <p>How much the model predicted each store to sell in the expected scenario, worst scenario and best scenario.</p>
     </li>
-    <div align="left">
-        <table>
-            <tbody>
-                <tr>
-                    <td style="width: 10.5008%;">
-                        <p><strong>store</strong></p>
-                    </td>
-                    <td style="width: 22.7389%;">
-                        <p><strong>predictions</strong></p>
-                    </td>
-                    <td style="width: 21.351%;">
-                        <p><strong>worst_scenario</strong></p>
-                    </td>
-                    <td style="width: 20.579%;">
-                        <p><strong>best_scenario</strong></p>
-                    </td>
-                    <td style="width: 13.273%;">
-                        <p><strong>MAE</strong></p>
-                    </td>
-                    <td style="width: 11.4556%;">
-                        <p><strong>MAPE</strong></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 10.5008%;">
-                        <p>1</p>
-                    </td>
-                    <td style="width: 22.7389%;">
-                        <p>163903.87</p>
-                    </td>
-                    <td style="width: 21.351%;">
-                        <p>163623.30</p>
-                    </td>
-                    <td style="width: 20.579%;">
-                        <p>164184.44</p>
-                    </td>
-                    <td style="width: 13.273%;">
-                        <p>280.57</p>
-                    </td>
-                    <td style="width: 11.4556%;">
-                        <p>0.063</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 10.5008%;">
-                        <p>2</p>
-                    </td>
-                    <td style="width: 22.7389%;">
-                        <p>179493.82</p>
-                    </td>
-                    <td style="width: 21.351%;">
-                        <p>179113.18</p>
-                    </td>
-                    <td style="width: 20.579%;">
-                        <p>179874.47</p>
-                    </td>
-                    <td style="width: 13.273%;">
-                        <p>380.64</p>
-                    </td>
-                    <td style="width: 11.4556%;">
-                        <p>0.076</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 10.5008%;">
-                        <p>3</p>
-                    </td>
-                    <td style="width: 22.7389%;">
-                        <p>261257.82</p>
-                    </td>
-                    <td style="width: 21.351%;">
-                        <p>260702.46</p>
-                    </td>
-                    <td style="width: 20.579%;">
-                        <p>261813.19</p>
-                    </td>
-                    <td style="width: 13.273%;">
-                        <p>555.36</p>
-                    </td>
-                    <td style="width: 11.4556%;">
-                        <p>0.077</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 10.5008%;">
-                        <p>4</p>
-                    </td>
-                    <td style="width: 22.7389%;">
-                        <p>343334.03</p>
-                    </td>
-                    <td style="width: 21.351%;">
-                        <p>342475.49</p>
-                    </td>
-                    <td style="width: 20.579%;">
-                        <p>344192.56</p>
-                    </td>
-                    <td style="width: 13.273%;">
-                        <p>858.53</p>
-                    </td>
-                    <td style="width: 11.4556%;">
-                        <p>0.081</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <p><strong>store</strong></p>
+                </td>
+                <td>
+                    <p><strong>predictions</strong></p>
+                </td>
+                <td>
+                    <p><strong>worst_scenario</strong></p>
+                </td>
+                <td>
+                    <p><strong>best_scenario</strong></p>
+                </td>
+                <td>
+                    <p><strong>MAE</strong></p>
+                </td>
+                <td>
+                    <p><strong>MAPE</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>1</p>
+                </td>
+                <td>
+                    <p>163903.87</p>
+                </td>
+                <td>
+                    <p>163623.30</p>
+                </td>
+                <td>
+                    <p>164184.44</p>
+                </td>
+                <td>
+                    <p>280.57</p>
+                </td>
+                <td>
+                    <p>0.063</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>2</p>
+                </td>
+                <td>
+                    <p>179493.82</p>
+                </td>
+                <td>
+                    <p>179113.18</p>
+                </td>
+                <td>
+                    <p>179874.47</p>
+                </td>
+                <td>
+                    <p>380.64</p>
+                </td>
+                <td>
+                    <p>0.076</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>3</p>
+                </td>
+                <td>
+                    <p>261257.82</p>
+                </td>
+                <td>
+                    <p>260702.46</p>
+                </td>
+                <td>
+                    <p>261813.19</p>
+                </td>
+                <td>
+                    <p>555.36</p>
+                </td>
+                <td>
+                    <p>0.077</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>4</p>
+                </td>
+                <td>
+                    <p>343334.03</p>
+                </td>
+                <td>
+                    <p>342475.49</p>
+                </td>
+                <td>
+                    <p>344192.56</p>
+                </td>
+                <td>
+                    <p>858.53</p>
+                </td>
+                <td>
+                    <p>0.081</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
     <li>
         <p>Analysis of predicted daily sales behavior in the analyzed period, for all stores sales.</p>

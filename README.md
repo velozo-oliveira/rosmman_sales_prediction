@@ -411,12 +411,12 @@
         <p>Analysis of predicted daily sales behavior in the analyzed period, for all stores sales.</p>
     </li>
     <img src='Images/Predict_Over_Time.png'/>
-            <p>The shadow indicates that multiple stores were ploted over time.</p>
+    <p>The shadow indicates that multiple stores were ploted over time.</p>
 </ul>
 
 
 <h1 dir="auto">Deployment</h1>
-<div align="left">At this stage the model will be put into production to make the predictions accessible to the end user. A telegram bot will be designed so anyone access the sales prediction of any store.</div>
+<div align="left">At this stage, the model will be put into production to make the predictions accessible to the end user. A telegram bot will be designed so anyone access the sales prediction of any store.</div>
 <img src='Images/API_scheme.png'/>
 <p>The user will send a request to Rossmann API through telegram using a code such as a store number. Rossmann receives the code, loads the Test Dataset, and filter only the features of the specified store.</p>
 <p>This info is sent from Rossmann API to API Handler along with a request for sales prediction. The API Handler accesses the Data Preparation file and loads the trained model to return the result.</p>

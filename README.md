@@ -10,6 +10,7 @@
 
 <h3 dir="auto">Solution Proposal</h3>
 <p>A machine learning model was developed to provide a more precise store sale forecast.</p>
+<p><a href="https://github.com/velozo-oliveira/rossmann_sales_prediction/blob/main/Project_Notebook_Sales_Prediction.ipynb"><img src=Images/jupyter.png></a></p>
 
 <h1 dir="auto">Dataset Summary</h1>
 <p>The dataset provides historical sales data for 1,115 Rossmann stores. The dataset is available on <a href="https://www.kaggle.com/c/rossmann-store-sales">Kaggle</a>.</p>

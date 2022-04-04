@@ -408,7 +408,7 @@
     </table>
 
     <li>
-        <p>Analysis of predicted daily sales behavior in the analyzed period, for all stores sales.</p>
+    <p>Analysis of predicted daily sales behavior in the analyzed period, for all stores sales.</p>
     </li>
     <img src='Images/Predict_Over_Time.png'/>
     <p>The shadow indicates that multiple stores were ploted over time.</p>

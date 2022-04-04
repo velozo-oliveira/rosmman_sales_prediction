@@ -9,7 +9,7 @@
 <p dir="auto">The CFO of Rossmann Drug Stores requested a sales prediction for each store for the next six weeks in order to define a budget for stores refurbishment. The resources would be allocated according to each store's sales prediction. The current prediction is not satisfactory as there are several inconsistencies. </p>
 
 <h3 dir="auto">Solution Proposal</h3>
-<p>In this context, I developed a machine learning model in order to provide a more accurate store sale forecast.</p>
+<p>A machine learning model was developed to provide a more precise store sale forecast.</p>
 
 <h1 dir="auto">Dataset Summary</h1>
 <p>The dataset provides historical sales data for 1,115 Rossmann stores. The dataset is available on <a href="https://www.kaggle.com/c/rossmann-store-sales">Kaggle</a>.</p>
@@ -136,18 +136,15 @@
 
 <h1 dir="auto">Top Three Data Insights </h1>
 <p><strong>H1. Stores with a bigger product assortment are more likely to sell more daily</strong></p>
-<p><strong>True:<strong/> Stores with a bigger product assortment are more likely to sell more</p>
+<p><strong>True:</strong> Stores with a bigger product assortment are more likely to sell more</p>
 <p>Stores with extra assortment have a better performance when comparing the average sales over time between all story types.</p>
 <img src='Images/H1_1.png'/>
-
 <p><br></p>
 
 <p><strong>H2.Stores with closer competitors are more likely to sell less</strong></p>
 <p><strong>False</strong>: The distance from competitors does not influence store sales.</p>
 <p>Notice that sales do not increase as the nearest competitor distance grow. Sales seem to be independent of competition distance, which can be considered an insight. Competitor does not impact the business negatively, contradicting the common belief.</p>
 <img src='Images/H2_2.png'.png/>
-
-
 <p><br></p>
 
 <p><strong>H5. Stores with more extended promotions are more likely to sell more</strong></p>
@@ -155,7 +152,6 @@
 
 <p>Historically, following this approach do not work in terms of generating more sales.</p>
 <img src='Images/H3.png'.png/>
-
 
 <h1 dir="auto">Tested Machine Learning Models</h1>
 <ul dir="auto">
@@ -280,13 +276,13 @@
                     <p>XGBoost Regressor</p>
                 </td>
                 <td style="width: 26.9886%;">
-                    <p>635.791052</p>
+                    <p>635.79</p>
                 </td>
                 <td style="width: 22.0729%;">
-                    <p>0.092513</p>
+                    <p>0.092</p>
                 </td>
                 <td style="width: 14.2035%;">
-                    <p>930.889367</p>
+                    <p>930.88</p>
                 </td>
             </tr>
         </tbody>
@@ -423,5 +419,18 @@
 </ul>
 
 
-<h1 dir="auto">Deploy</h1>
+<h1 dir="auto">Deployment</h1>
 <div align="left">At this stage the model will be put into production to make the predictions accessible to the end user. A telegram bot will be designed so anyone access the sales prediction of any store.</div>
+<img src='Images/API_scheme.png'/>
+<p>The user will send a request to Rossmann API through telegram using a code such as a store number. Rossmann receives the code, loads the Test Dataset, and filter only the features of the specified store.</p>
+<p>This info is sent from Rossmann API to API Handler along with a request for sales prediction. The API Handler accesses the Data Preparation file and loads the trained model to return the result.</p>
+<h2>Telegram </h2>
+<p>Send the store number and get the sales prediction for the next six weeks.</p>
+<img src="Images/Telegram.jpg" style="width: 280px; height: 560px;"/>
+<p>chatbot id: @rossmann_modelprediction_bot</p
+
+
+
+<h1 dir="auto">Deployment</h1>
+
+<p>Overall, the model developed had a good performance and the results satisfied the company requirements. Following the CRISP methodology, the next step is to analyze the stores with bad performance to increase the accuracy of the sales forecast. New Machine Learning models could be applied. However, the time and resources allocated to a new cycle should be taken into account. </p>

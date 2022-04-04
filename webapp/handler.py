@@ -45,5 +45,5 @@ def rossmann_predict():
         return Reponse( '{}', status=200, mimetype='application/json' )
 
 if __name__ == '__main__':
-    port = os.enfiron.get('PORT', 5000) 	
-    app.run( host = '0.0.0.0' ) # '0.0.0.0' indicates that this Flask application is running locally so I can run the simulation.
+    port = os.environ.get('PORT', 5000) 	
+    app.run( host = '0.0.0.0', port=port, debug=True ) # '0.0.0.0' indicates that this Flask application is running locally so I can run the simulation.

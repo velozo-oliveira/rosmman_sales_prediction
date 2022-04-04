@@ -301,9 +301,8 @@
 <p>Notice that most predictions are centered around a line parallel to the X axis (MAPE 9% in Y axis). However, there are points quite far apart. Some stores' forecasts are not accurate. Stores where the value prediction diverge significantly from the real sales are not recommended to make business decisions based on the current model.</p>
     <li>
 
-        <p>How much the model predicted each store to sell in the expected scenario, worst scenario and best scenario.</p>
+    <p>How much the model predicted each store to sell in the expected scenario, worst scenario and best scenario.</p>
     </li>
-
     <div align="left">
         <table>
             <tbody>
@@ -427,10 +426,9 @@
 <h2>Telegram </h2>
 <p>Send the store number and get the sales prediction for the next six weeks.</p>
 <img src="Images/Telegram.jpg" style="width: 280px; height: 560px;"/>
-<p>chatbot id: @rossmann_modelprediction_bot</p
+<p>chatbot id: @rossmann_modelprediction_bot</p>
 
 
-
-<h1 dir="auto">Deployment</h1>
+<h1 dir="auto">Conclusion</h1>
 
 <p>Overall, the model developed had a good performance and the results satisfied the company requirements. Following the CRISP methodology, the next step is to analyze the stores with bad performance to increase the accuracy of the sales forecast. New Machine Learning models could be applied. However, the time and resources allocated to a new cycle should be taken into account. </p>

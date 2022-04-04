@@ -121,18 +121,6 @@
 <p dir="auto"><br></p>
 
 <ol dir="auto">
-<p><strong>H1.</strong> Stores with a bigger product assortment are more likely to sell more daily</p>
-<p><strong>H2.</strong> Stores with closer competitors are more likely to sell less</p>
-<p><strong>H3.</strong> Stores with longer-standing competitors are more likely sell more</p>
-<p><strong>H4.</strong> Products on sales during a long period of time are more likely to sell more daily</p>
-<p><strong>H5.</strong> Stores with more extended promotions are more likely to sell more</p>
-<p><strong>H6.</strong> Sales are more likely to increase during holiday season (Christmas)</p>
-<p><strong>H7.</strong> Stores are more likely to sell more over the years</p>
-<p><strong>H8.</strong> Stores are more likely to sell more in the second half of the year</p>
-<p><strong>H9.</strong> Stores are more likely to sell more after the 10th day of each month</p>
-<p><strong>H10.</strong> Stores are more likely to sell less on weekends</p>
-<p><strong>H11.</strong> Stores are more likely to sell less during school holidays</p>
-</ol>
 <p style="line-height: 1;"><strong>H1</strong>. Stores with a bigger product assortment are more likely to sell more daily&nbsp;</p>
 <p style="line-height: 1;"><strong>H2</strong>. Stores with closer competitors are more likely to sell less&nbsp;</p>
 <p style="line-height: 1;"><strong>H3</strong>. Stores with longer-standing competitors are more likely sell more&nbsp;</p>
@@ -144,6 +132,8 @@
 <p style="line-height: 1;"><strong>H9</strong>. Stores are more likely to sell more after the 10th day of each month&nbsp;</p>
 <p style="line-height: 1;"><strong>H10</strong>. Stores are more likely to sell less on weekends&nbsp;</p>
 <p style="line-height: 1;"><strong>H11</strong>. Stores are more likely to sell less during school holidays</p>
+</ol>
+
 <p dir="auto">Please find the summary of the analysis of hypotheses 1, 2, 5. Refer to the notebook file for the complete Exploratory Data Analysis.<br></p>
 
 <h1 dir="auto">Top Three Data Insights </h1>

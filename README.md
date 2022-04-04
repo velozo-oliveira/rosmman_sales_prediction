@@ -132,8 +132,18 @@
 <p><strong>H9.</strong> Stores are more likely to sell more after the 10th day of each month</p>
 <p><strong>H10.</strong> Stores are more likely to sell less on weekends</p>
 <p><strong>H11.</strong> Stores are more likely to sell less during school holidays</p>
-
 </ol>
+<p style="line-height: 1;"><strong>H1</strong>. Stores with a bigger product assortment are more likely to sell more daily&nbsp;</p>
+<p style="line-height: 1;"><strong>H2</strong>. Stores with closer competitors are more likely to sell less&nbsp;</p>
+<p style="line-height: 1;"><strong>H3</strong>. Stores with longer-standing competitors are more likely sell more&nbsp;</p>
+<p style="line-height: 1;"><strong>H4</strong>. Products on sales during a long period of time are more likely to sell more daily&nbsp;</p>
+<p style="line-height: 1;"><strong>H5</strong>. Stores with more extended promotions are more likely to sell more&nbsp;</p>
+<p style="line-height: 1;"><strong>H6</strong>. Sales are more likely to increase during holiday season (Christmas)&nbsp;</p>
+<p style="line-height: 1;"><strong>H7</strong>. Stores are more likely to sell more over the years&nbsp;</p>
+<p style="line-height: 1;"><strong>H8</strong>. Stores are more likely to sell more in the second half of the year&nbsp;</p>
+<p style="line-height: 1;"><strong>H9</strong>. Stores are more likely to sell more after the 10th day of each month&nbsp;</p>
+<p style="line-height: 1;"><strong>H10</strong>. Stores are more likely to sell less on weekends&nbsp;</p>
+<p style="line-height: 1;"><strong>H11</strong>. Stores are more likely to sell less during school holidays</p>
 <p dir="auto">Please find the summary of the analysis of hypotheses 1, 2, 5. Refer to the notebook file for the complete Exploratory Data Analysis.<br></p>
 
 <h1 dir="auto">Top Three Data Insights </h1>
@@ -141,13 +151,13 @@
 <p><strong>True:</strong> Stores with a bigger product assortment are more likely to sell more</p>
 <p>Stores with extra assortment have a better performance when comparing the average sales over time between all story types.</p>
 <img src='Images/H1_1.png'/>
-<p><br></p>
+<p dir="auto"></p>
 
 <p><strong>H2.Stores with closer competitors are more likely to sell less</strong></p>
 <p><strong>False</strong>: The distance from competitors does not influence store sales.</p>
 <p>Notice that sales do not increase as the nearest competitor distance grow. Sales seem to be independent of competition distance, which can be considered an insight. Competitor does not impact the business negatively, contradicting the common belief.</p>
 <img src='Images/H2_2.png'.png/>
-<p><br></p>
+<p dir="auto"></p>
 
 <p><strong>H5. Stores with more extended promotions are more likely to sell more</strong></p>
 <p><strong>False:</strong> Stores that applied promo2 followed by promo1 performed worse on average when compared to stores that applied only the promo1.</p>

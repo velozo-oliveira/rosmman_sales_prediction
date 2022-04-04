@@ -293,10 +293,11 @@
 <p>These are the methods used to evaluate the Machine Learning prediction model in terms of business results:</p>
 <ul>
   <li><p><strong>Analysis of divergence between the sales predicted and real sales.</strong></p></li>
+
+  <p>The graph bellow presents the stores&apos; MAPE:</p>
+  <p><img src="Images/MAPE.png"><br></p>
+  <p>Notice that most predictions are centered around a line parallel to the X axis (MAPE 9% in Y axis). However, there are points quite far apart. Some stores&apos; forecasts are not accurate. Stores where the value prediction diverge significantly from the real sales are not recommended to make business decisions based on the current model.</p>
 </ul>
-<p>The graph bellow presents the stores&apos; MAPE:</p>
-<p><img src="Images/MAPE.png"><br></p>
-<p>Notice that most predictions are centered around a line parallel to the X axis (MAPE 9% in Y axis). However, there are points quite far apart. Some stores&apos; forecasts are not accurate. Stores where the value prediction diverge significantly from the real sales are not recommended to make business decisions based on the current model.</p>
 <p><br></p>
 <ul>
   <li><p><strong>How much the model predicted each store to sell in the expected scenario, worst scenario and best scenario.</strong></p></li>

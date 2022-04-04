@@ -291,120 +291,127 @@
 
 <h1 dir="auto">Business Performance</h1>
 <p>These are the methods used to evaluate the Machine Learning prediction model in terms of business results:</p>
-
-<p><strong>Analysis of divergence between the sales predicted and real sales.</strong></p>
+<ul>
+  <li><p><strong>Analysis of divergence between the sales predicted and real sales.</strong></p></li>
+</ul>
 <p>The graph bellow presents the stores&apos; MAPE:</p>
 <p><img src="Images/MAPE.png"><br></p>
 <p>Notice that most predictions are centered around a line parallel to the X axis (MAPE 9% in Y axis). However, there are points quite far apart. Some stores&apos; forecasts are not accurate. Stores where the value prediction diverge significantly from the real sales are not recommended to make business decisions based on the current model.</p>
-<p><strong>How much the model predicted each store to sell in the expected scenario, worst scenario and best scenario.</strong></p>
-<table>
-    <tbody>
-        <tr>
-            <td>
-                <p><strong>store</strong></p>
-            </td>
-            <td>
-                <p><strong>predictions</strong></p>
-            </td>
-            <td>
-                <p><strong>worst_scenario</strong></p>
-            </td>
-            <td>
-                <p><strong>best_scenario</strong></p>
-            </td>
-            <td>
-                <p><strong>MAE</strong></p>
-            </td>
-            <td>
-                <p><strong>MAPE</strong></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>1</p>
-            </td>
-            <td>
-                <p>163903.87</p>
-            </td>
-            <td>
-                <p>163623.30</p>
-            </td>
-            <td>
-                <p>164184.44</p>
-            </td>
-            <td>
-                <p>280.57</p>
-            </td>
-            <td>
-                <p>0.063</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>2</p>
-            </td>
-            <td>
-                <p>179493.82</p>
-            </td>
-            <td>
-                <p>179113.18</p>
-            </td>
-            <td>
-                <p>179874.47</p>
-            </td>
-            <td>
-                <p>380.64</p>
-            </td>
-            <td>
-                <p>0.076</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>3</p>
-            </td>
-            <td>
-                <p>261257.82</p>
-            </td>
-            <td>
-                <p>260702.46</p>
-            </td>
-            <td>
-                <p>261813.19</p>
-            </td>
-            <td>
-                <p>555.36</p>
-            </td>
-            <td>
-                <p>0.077</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>4</p>
-            </td>
-            <td>
-                <p>343334.03</p>
-            </td>
-            <td>
-                <p>342475.49</p>
-            </td>
-            <td>
-                <p>344192.56</p>
-            </td>
-            <td>
-                <p>858.53</p>
-            </td>
-            <td>
-                <p>0.081</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<p><br></p>
+<ul>
+  <li><p><strong>How much the model predicted each store to sell in the expected scenario, worst scenario and best scenario.</strong></p></li>
 
-<p><strong>Analysis of predicted daily sales behavior in the analyzed period, for all stores sales.</strong></p>
-<img src='Images/Predict_Over_Time.png'/>
-<p>The shadow indicates that multiple stores were ploted over time.</p>
+  <table>
+      <tbody>
+          <tr>
+              <td>
+                  <p><strong>store</strong></p>
+              </td>
+              <td>
+                  <p><strong>predictions</strong></p>
+              </td>
+              <td>
+                  <p><strong>worst_scenario</strong></p>
+              </td>
+              <td>
+                  <p><strong>best_scenario</strong></p>
+              </td>
+              <td>
+                  <p><strong>MAE</strong></p>
+              </td>
+              <td>
+                  <p><strong>MAPE</strong></p>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <p>1</p>
+              </td>
+              <td>
+                  <p>163903.87</p>
+              </td>
+              <td>
+                  <p>163623.30</p>
+              </td>
+              <td>
+                  <p>164184.44</p>
+              </td>
+              <td>
+                  <p>280.57</p>
+              </td>
+              <td>
+                  <p>0.063</p>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <p>2</p>
+              </td>
+              <td>
+                  <p>179493.82</p>
+              </td>
+              <td>
+                  <p>179113.18</p>
+              </td>
+              <td>
+                  <p>179874.47</p>
+              </td>
+              <td>
+                  <p>380.64</p>
+              </td>
+              <td>
+                  <p>0.076</p>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <p>3</p>
+              </td>
+              <td>
+                  <p>261257.82</p>
+              </td>
+              <td>
+                  <p>260702.46</p>
+              </td>
+              <td>
+                  <p>261813.19</p>
+              </td>
+              <td>
+                  <p>555.36</p>
+              </td>
+              <td>
+                  <p>0.077</p>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <p>4</p>
+              </td>
+              <td>
+                  <p>343334.03</p>
+              </td>
+              <td>
+                  <p>342475.49</p>
+              </td>
+              <td>
+                  <p>344192.56</p>
+              </td>
+              <td>
+                  <p>858.53</p>
+              </td>
+              <td>
+                  <p>0.081</p>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</ul>
+<p><br></p>
+<ul>
+  <li><p><strong>Analysis of predicted daily sales behavior in the analyzed period, for all stores sales.</strong></p></li>
+  <img src='Images/Predict_Over_Time.png'/>
+  <p>The shadow indicates that multiple stores were ploted over time.</p>
+</ul>
 
 <h1 dir="auto">Deployment</h1>
 <div align="left">At this stage, the model will be put into production to make the predictions accessible to the end user. A telegram bot will be designed so anyone access the sales prediction of any store.</div>
